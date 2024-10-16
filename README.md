@@ -4,7 +4,7 @@
 
 This crate allows you to convert any type to any other type without the use of unsafe.
 
-It provides [one function](src/lib.rs), implemented entirely in Safe Rust:
+It provides one function, [implemented entirely in Safe Rust](src/lib.rs):
 
 ```
 fn transmute<T, U>(x: T) -> U
@@ -51,4 +51,4 @@ system.
 
 Please do not actually use this.
 
-**Moral of the story**: you cannot rely solely on Rust for supply chain security.
+**Moral of the story**: you cannot rely solely on Rust for supply chain security or isolation against an adversary. If you need adversarially-secure isolation, you should use sandboxing tools such as [LFI](https://github.com/zyedidia/lfi) or WebAssembly, or use hardware-based isolation via multiple processes or virtualization.
