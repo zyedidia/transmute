@@ -1,5 +1,7 @@
 # Rust Transmute without Unsafe!
 
+[![unsafe forbidden badge](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/zyedidia/transmute/)
+
 This crate allows you to convert any type to any other type without the use of unsafe.
 
 It provides [one function](src/lib.rs), implemented entirely in Safe Rust:
@@ -8,7 +10,7 @@ It provides [one function](src/lib.rs), implemented entirely in Safe Rust:
 fn transmute<T, U>(x: T) -> U
 ```
 
-Usable in code that is marked `#![forbid(unsafe_code)]`.
+Usable in projects that require dependencies to use `#![forbid(unsafe_code)]`.
 
 Never fight the borrow checker again!
 

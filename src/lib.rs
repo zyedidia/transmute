@@ -1,3 +1,5 @@
+#![forbid(unsafe_code)]
+
 trait Object<U> {
     type Output;
 }
