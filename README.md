@@ -2,7 +2,7 @@
 
 This crate allows you to convert any type to any other type without the use of unsafe.
 
-It provides one function:
+It provides [one function](src/lib.rs), implemented entirely in Safe Rust:
 
 ```
 fn transmute<T, U>(x: T) -> U
