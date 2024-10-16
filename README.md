@@ -2,7 +2,7 @@
 
 [![unsafe forbidden badge](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/zyedidia/transmute/)
 
-This crate allows you to convert any type to any other type without the use of unsafe.
+This crate allows you to convert any type to any other type without the use of unsafe (thanks to the genius idea presented here: https://github.com/rust-lang/rust/issues/57893#issuecomment-500250283).
 
 It provides one function, [implemented entirely in Safe Rust](src/lib.rs):
 
